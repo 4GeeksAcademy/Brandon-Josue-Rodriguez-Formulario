@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de la página</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .fondo-personalizado{
+            background-color: #f8d7da;
+        }
+        .texto-personalizado{
+            color: #823239;
+        }
+    </style>
+
+</head>
+<body>
+    <table class="d-flex table" style="border: 1px solid lightgray;">
+        <tr> 
+            <div class="container-fluid text-left">
+            <div class="row">
+                <div class><h1>Payment for example</h1></div>
+        </div> 
+            </div>
+        </tr>
+        <tr> <div class="container-fluid">
+            <div class="row">
+                <div class="col-12"><h5 class="fondo-personalizado p-2 border rounded texto-personalizado" style="border: 1px solid red">Some fields are missing</h5>
+                </div>
+            </div>
+        </div></tr>
+        <tr>
+            <div class="container-fluid">
+                <div class="row px-3">
+                    <div class="col-5">
+                        <label for="inputcard" class="form-label"><h5>Card #</h5></label>
+<input type="password" id="inputcard" class="form-control" aria-describedby="passwordHelpBlock" placeholder="XXXXXXXXXXXXXXXX" maxlength="16">
+                    </div>
+                    <div class="col-3">
+                        <label for="inputcvc" class="form-label"><h5>CVC</h5></label>
+                        <input type="password" id="inputcvc" class="form-control" aria-describedby="passwordHelpBlock" placeholder="0000" maxlength="4">
+                    </div>
+                    <div class="col-4">
+                        <h5 class="w-100%"><label for="inputamount" class="form-label">Amount</label></h5>
+                        <div class="d-flex">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <input type="tel" id="inputamount" class="form-control" placeholder="Amount">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </tr>
+        <tr>
+            <div class="container-fluid">
+                <div class="row px-3">
+                    <div class="col-6">
+                        <h5><label for="imputname" class="form-label">Name</label></h5>
+                        <input type="text" id="inputname" class="form-control">
+                    </div>
+                    <div class="col-6">
+                        <h5><label for="inputlastname" class="form-label">Last Name</label></h5>
+                        <input type="text" id="inputlastname" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </tr>
+        <tr>
+            <div class="container-fluid">
+                <div class="row px-3">
+                    <div class="col-6">
+                        <h5><label for="inputcity" class="form-label">City</label></h5>
+                        <input type="text" id="inputcity" class="form-control">
+                    </div>
+                    <div class="col-3">
+                        <h5><label for="inputstate" class="form-label">State</label></h5>
+                        <button class="btn btn-transparent btn-lg dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pick a state
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Morelos</a></li>
+                            <li><a class="dropdown-item" href="#">CDMX</a></li>
+                            <li><a class="dropdown-item" href="#">Estado De Mexico</a></li>
+                            <li><a class="dropdown-item" href="#">Guerrero</a></li>
+                          </ul>
+                    </div>
+                    <div class="col-3">
+                        <h5> <label for="inputcode" class="form-label">Postal Code</label></h5>
+                        <input type="text" id="inputcode" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </tr>
+        <tr>
+            <div class="container-fluid">
+                <div class="row px-2">
+                    <div  class="col-3" style="border-radius: 10px; height: 200px;">
+                        <h3><label class="" for="formulario">We accept:</label></h3>
+                        <div class="d-flex bg-secondary" style="border-radius: 10px;">
+                        <form class="" id="formulario" class>
+                            <div class="custom-control custom-radio px-3">
+                              <input type="radio" id="option1" name="options" class="custom-control-input">
+                              <label class="custom-control-label" for="option1"><i style="font-size: 30px;" class="fa-brands fa-cc-mastercard"></i></label>
+                            </div>
+                            <div class="custom-control custom-radio px-3">
+                              <input type="radio" id="option2" name="options" class="custom-control-input">
+                              <label class="custom-control-label" for="option2"><i style="font-size: 30px;" class="fa-brands fa-cc-visa"></i></label>
+                            </div>
+                            <div class="custom-control custom-radio px-3">
+                              <input type="radio" id="option3" name="options" class="custom-control-input">
+                              <label class="custom-control-label" for="option3"><i style="font-size: 30px;" class="fa-brands fa-cc-paypal"></i></label>
+                            </div>
+                            <div class="custom-control custom-radio px-3">
+                                <input type="radio" id="option4" name="options" class="custom-control-input">
+                                <label class="custom-control-label" for="option4"><i style="font-size: 30px;" class="fa-brands fa-amazon-pay"></i></label>
+                            </div>
+                          </form>
+                          </div>
+                    </div>
+                    <div class="col-3">
+                </div>
+                <div class="col-6">
+                    <h3><label for="inputmensaje" class="form-label">Message</label></h3>
+                    <textarea class="w-100" style="height: 100px" name="Message" id="Message"></textarea>
+                    <p class="text-secondary">add any notes here</p>
+                </div>
+            </div>
+        </tr>
+        <tr>
+            <div class="container-fluid" style="border: 1px solid lightgrey;">
+                <div class="row">
+                    <div class="col-10"></div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-secondary btn-lg">Cancel</button>
+<button type="button" class="btn btn-primary btn-lg">Send</button>
+                    </div>
+                </div>
+            </div>
+        </tr>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
